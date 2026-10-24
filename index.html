@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050504">
+  <meta name="description" content="Conheça o Método Além das Dores, criado por Anderson Mendonça: um caminho que integra ciência, fé e desenvolvimento humano para apoiar sua transformação.">
+  <title>Método Além das Dores | Anderson Mendonça</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#050504;--panel:#0c0b08;--gold:#d9a83e;--gold2:#f5d887;--text:#f4f0e7;--muted:#c0b9ac;--line:rgba(217,168,62,.34);--max:1240px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif;line-height:1.7}a{color:inherit;text-decoration:none}button,input,textarea{font:inherit}.wrap{width:min(var(--max),calc(100% - 48px));margin:auto}.gold{color:var(--gold2)}.eyebrow{color:var(--gold2);letter-spacing:.24em;text-transform:uppercase;font-size:.76rem;font-weight:600}.section{padding:105px 0;position:relative}.section-head{max-width:740px;margin:0 auto 48px;text-align:center}.section-head h2{font:500 clamp(2.4rem,5vw,4.3rem)/.98 'Barlow Condensed',sans-serif;margin:14px 0 18px}.section-head p{color:var(--muted);margin:0}.rule{width:90px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:22px auto}
+    header{position:fixed;inset:0 0 auto;z-index:20;background:rgba(5,5,4,.86);backdrop-filter:blur(16px);border-bottom:1px solid rgba(217,168,62,.15)}.nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:12px;min-width:max-content}.monogram{width:49px;height:49px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold2);font:500 1.35rem 'Barlow Condensed',sans-serif}.brand strong{display:block;font:500 1rem 'Barlow Condensed',sans-serif;letter-spacing:.08em}.brand small{display:block;color:var(--gold2);font-size:.62rem;letter-spacing:.1em;text-transform:uppercase}.navlinks{display:flex;align-items:center;gap:25px;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em}.navlinks a{color:#e2ddd2;transition:.2s}.navlinks a:hover{color:var(--gold2)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;border:1px solid var(--gold);padding:12px 18px;color:#fff5d8;text-transform:uppercase;letter-spacing:.07em;font-size:.76rem;transition:.25s;background:linear-gradient(135deg,#9d6818,#dba63a 52%,#80500d);border-radius:4px;box-shadow:0 0 22px rgba(217,168,62,.12)}.nav-cta{background:transparent;padding:10px 15px}.btn:hover,.nav-cta:hover{transform:translateY(-2px);box-shadow:0 0 28px rgba(217,168,62,.25)}.menu-toggle{display:none;background:none;border:1px solid var(--line);color:var(--gold2);font-size:1.4rem;padding:5px 11px}
+    .hero{min-height:780px;padding:145px 0 70px;display:flex;align-items:center;overflow:hidden;position:relative;background:radial-gradient(ellipse at 80% 48%,rgba(174,105,18,.22),transparent 38%),radial-gradient(ellipse at 68% 80%,rgba(214,151,34,.12),transparent 25%),#050504}.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#050504 0%,rgba(5,5,4,.95) 38%,rgba(5,5,4,.4) 70%,#050504 100%),url('assets/anderson-referencia.jpg') right center/auto 100% no-repeat;opacity:.58;mask-image:linear-gradient(90deg,transparent 0%,black 48%,black 86%,transparent 100%)}.hero:after{content:"";position:absolute;right:8%;top:18%;width:360px;height:360px;border:1px solid rgba(217,168,62,.12);border-radius:50%;box-shadow:0 0 0 28px rgba(217,168,62,.025),0 0 0 65px rgba(217,168,62,.02);pointer-events:none}.hero-inner{position:relative;z-index:1;max-width:720px}.hero h1{font:500 clamp(4.2rem,10vw,8.5rem)/.78 'Barlow Condensed',sans-serif;letter-spacing:-.035em;margin:22px 0 28px;text-transform:uppercase}.hero h1 span{display:block;color:var(--gold2);text-shadow:0 0 32px rgba(217,168,62,.22)}.hero h1 .white{color:#f6f0e4}.hero-sub{font-size:1.05rem;text-transform:uppercase;letter-spacing:.12em;color:var(--gold2);max-width:560px}.hero p{max-width:570px;color:#d0c9bd;font-size:.94rem}.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}.btn-outline{background:rgba(0,0,0,.3)}.hero-stats{position:relative;z-index:2;margin-top:65px;display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);background:rgba(5,5,4,.72);backdrop-filter:blur(12px);border-radius:8px;overflow:hidden}.stat{padding:23px 20px;text-align:center;border-right:1px solid var(--line)}.stat:last-child{border:0}.stat .symbol{font-size:1.8rem;color:var(--gold2);display:block}.stat strong{display:block;font:500 1.05rem 'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.05em}.stat small{font-size:.68rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+    .pillars{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;border:1px solid var(--line);background:var(--line);border-radius:8px;overflow:hidden}.pillar{background:linear-gradient(145deg,#100e09,#070706);padding:32px 24px;text-align:center}.icon{height:56px;font-size:2.5rem;color:var(--gold2);line-height:1.3}.pillar h3,.pain h3{font:500 1.15rem 'Barlow Condensed',sans-serif;color:var(--gold2);text-transform:uppercase;letter-spacing:.05em}.pillar p{font-size:.85rem;color:var(--muted);margin-bottom:0}.pain-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.pain{padding:28px 12px;text-align:center;border-right:1px solid rgba(217,168,62,.17)}.pain:last-child{border:0}.pain .icon{font-size:2rem}.pain h3{font:400 .82rem Inter,sans-serif;color:#e8dfcf;text-transform:none;letter-spacing:0;margin:12px 0 0}
+    .about-grid{display:grid;grid-template-columns:1fr 1.08fr;gap:70px;align-items:center}.portrait{min-height:590px;position:relative;border:1px solid var(--line);border-radius:5px;overflow:hidden;background:#15100a}.portrait img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover;object-position:center;filter:saturate(.8)}.portrait:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(5,5,4,.65),transparent 60%),linear-gradient(90deg,transparent 75%,#050504)}.portrait-label{position:absolute;z-index:2;bottom:24px;left:24px}.portrait-label strong{display:block;font:500 1.8rem 'Barlow Condensed',sans-serif}.portrait-label span{font-size:.72rem;letter-spacing:.14em;color:var(--gold2);text-transform:uppercase}.about-copy h2{font:500 clamp(2.7rem,5vw,4.6rem)/.9 'Barlow Condensed',sans-serif;margin:14px 0 24px}.about-copy p{color:var(--muted);font-size:.91rem}.about-copy p strong{color:var(--gold2);font-weight:500}.roles{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0}.roles span{border:1px solid var(--line);padding:7px 12px;font-size:.75rem;color:#e9d8a8}
+    .method{background:linear-gradient(180deg,#080705,#0b0905 50%,#050504)}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:34px 24px;position:relative}.step{position:relative;padding:27px 24px 24px;border:1px solid var(--line);background:rgba(0,0,0,.38);border-radius:5px}.step-number{width:42px;height:42px;display:grid;place-items:center;border:1px solid var(--gold);border-radius:50%;color:var(--gold2);font:500 1.1rem 'Barlow Condensed',sans-serif;margin-bottom:20px}.step h3{font:500 1.35rem 'Barlow Condensed',sans-serif;text-transform:uppercase;margin:0 0 10px}.step p{font-size:.85rem;color:var(--muted);margin:0}.step p strong{color:var(--gold2);font-weight:500}.quote{max-width:750px;margin:58px auto 0;text-align:center;font:500 1.8rem/1.35 'Barlow Condensed',sans-serif}.quote span{color:var(--gold2)}
+    .audience{display:grid;grid-template-columns:1fr 1fr;gap:22px}.audience-card{padding:32px;border:1px solid var(--line);background:linear-gradient(135deg,rgba(217,168,62,.06),transparent);border-radius:5px}.audience-card h3{font:500 1.6rem 'Barlow Condensed',sans-serif;margin:0 0 14px;color:var(--gold2)}.audience-card ul{list-style:none;padding:0;margin:0}.audience-card li{padding:10px 0;border-bottom:1px solid rgba(217,168,62,.12);color:var(--muted);font-size:.9rem}.audience-card li:before{content:'✦';color:var(--gold);margin-right:10px}.audience-card li:last-child{border:0}
+    .cta-band{padding:58px 0;background:radial-gradient(ellipse at center,rgba(175,112,20,.18),transparent 70%),#090806;border-block:1px solid var(--line);text-align:center}.cta-band h2{font:500 clamp(2.4rem,5vw,4rem)/1 'Barlow Condensed',sans-serif;margin:12px auto;max-width:800px}.cta-band p{color:var(--muted);max-width:620px;margin:0 auto 25px}.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px}.contact-copy h2{font:500 clamp(2.7rem,5vw,4.2rem)/.95 'Barlow Condensed',sans-serif;margin:14px 0}.contact-copy p{color:var(--muted)}.contact-note{padding:18px;border-left:2px solid var(--gold);background:rgba(217,168,62,.06);color:#d8cdb9;font-size:.86rem;margin-top:26px}.contact-form{display:grid;gap:14px}.field{display:grid;gap:7px}.field label{font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;color:var(--gold2)}.field input,.field textarea{width:100%;padding:13px 14px;background:#0c0b08;border:1px solid rgba(217,168,62,.3);border-radius:3px;color:var(--text);outline:none}.field input:focus,.field textarea:focus{border-color:var(--gold)}.field textarea{min-height:120px;resize:vertical}.form-message{font-size:.8rem;color:var(--muted);margin:0}footer{padding:28px 0;border-top:1px solid var(--line);color:#a79d8b;font-size:.76rem}.footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:center}.footer-links{display:flex;gap:18px;flex-wrap:wrap}.footer-links a:hover{color:var(--gold2)}
+    @media(max-width:950px){.navlinks{gap:13px;font-size:.65rem}.brand strong{font-size:.88rem}.nav-cta{display:none}.hero{min-height:auto;padding-top:150px}.hero:before{background:linear-gradient(90deg,#050504 0%,rgba(5,5,4,.85) 65%,rgba(5,5,4,.5)),url('assets/anderson-referencia.jpg') right center/auto 100% no-repeat}.about-grid{gap:35px}.portrait{min-height:500px}.pain-grid{grid-template-columns:repeat(3,1fr)}.pain:nth-child(3){border-right:0}.pain:nth-child(-n+3){border-bottom:1px solid var(--line)}.steps{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:700px){.wrap{width:min(100% - 32px,var(--max))}.nav{height:72px}.menu-toggle{display:block}.navlinks{display:none;position:absolute;top:72px;left:0;right:0;background:rgba(5,5,4,.98);padding:18px 24px 24px;flex-direction:column;align-items:stretch;border-bottom:1px solid var(--line);font-size:.8rem}.navlinks.open{display:flex}.navlinks a{padding:8px 0}.brand small{font-size:.54rem}.monogram{width:42px;height:42px}.hero{padding:130px 0 35px}.hero:before{opacity:.35;background-position:65% center}.hero:after{width:220px;height:220px;right:-60px;top:15%}.hero h1{font-size:clamp(4rem,18vw,6rem)}.hero-sub{font-size:.8rem}.hero p{font-size:.88rem}.hero-stats{grid-template-columns:repeat(2,1fr);margin-top:42px}.stat{border-bottom:1px solid var(--line)}.stat:nth-child(2){border-right:0}.stat:nth-child(3),.stat:nth-child(4){border-bottom:0}.section{padding:72px 0}.pillars{grid-template-columns:repeat(2,1fr)}.pillar{padding:24px 15px}.pain-grid{grid-template-columns:repeat(2,1fr)}.pain{border-bottom:1px solid var(--line)}.pain:nth-child(2n){border-right:0}.pain:nth-child(3){border-right:1px solid rgba(217,168,62,.17)}.pain:nth-child(5),.pain:nth-child(6){border-bottom:0}.about-grid,.contact-grid{grid-template-columns:1fr;gap:30px}.portrait{min-height:430px;order:2}.about-copy{order:1}.steps{grid-template-columns:1fr;gap:15px}.step{padding:22px}.quote{font-size:1.5rem;margin-top:40px}.audience{grid-template-columns:1fr}.footer-inner{align-items:flex-start;flex-direction:column}.section-head{margin-bottom:32px}}
+
+    /* Ajuste visual inspirado diretamente no template Music Band da Weblium */
+    :root{--max:1320px}
+    body{font-family:Inter,Arial,sans-serif;font-size:15px;letter-spacing:.005em}
+    .brand strong,.monogram,.section-head h2,.hero h1,.stat strong,.pillar h3,.pain h3,.portrait-label strong,.about-copy h2,.step h3,.step-number,.quote,.audience-card h3,.cta-band h2,.contact-copy h2{font-family:'Barlow Condensed',Impact,sans-serif;font-weight:500;letter-spacing:.025em}
+    .hero h1{font-weight:600;letter-spacing:.015em;line-height:.82}
+    .section-head h2,.about-copy h2,.contact-copy h2,.cta-band h2{letter-spacing:.01em;text-transform:uppercase}
+    .eyebrow,.hero-sub,.navlinks,.nav-cta,.btn,.brand small,.portrait-label span{font-family:Inter,Arial,sans-serif;letter-spacing:.16em}
+    .section{padding:92px 0}
+    .hero{min-height:740px}
+    .pillars,.hero-stats,.step,.audience-card,.portrait,.contact-form{border-radius:0}
+    .pillar{background:#080807}
+    .step{border-width:1px 0 0;background:transparent}
+    .navlinks{gap:22px;font-size:.68rem}
+    .btn,.nav-cta{border-radius:2px}
+    @media(max-width:760px){.section{padding:68px 0}.hero{min-height:auto}}
+    /* Refinamento: sem contornos dourados; dourado aplicado como preenchimento em cards selecionados */
+    header{border-bottom:0}
+    .monogram{border:0;background:rgba(217,168,62,.12)}
+    .nav-cta,.btn{border:0;box-shadow:none}
+    .nav-cta{background:rgba(217,168,62,.12);color:var(--gold2)}
+    .hero:after{border:0;box-shadow:0 0 0 28px rgba(217,168,62,.025),0 0 0 65px rgba(217,168,62,.02)}
+    .hero-stats{border:0;background:rgba(217,168,62,.07)}
+    .stat{border-right:0}
+    .pillars{border:0;background:transparent;gap:14px;overflow:visible}
+    .pillar{background:linear-gradient(145deg,rgba(217,168,62,.14),rgba(217,168,62,.035) 65%,#080807);border-radius:5px}
+    .pain-grid{border:0;gap:10px}
+    .pain{border:0;background:rgba(255,255,255,.025);border-radius:4px}
+    .portrait{border:0}
+    .roles span{border:0;background:rgba(217,168,62,.12);border-radius:3px}
+    .step{border:0;border-radius:5px;background:linear-gradient(145deg,rgba(217,168,62,.13),rgba(217,168,62,.035) 60%,rgba(255,255,255,.015));}
+    .step-number{border:0;background:rgba(217,168,62,.18);border-radius:50%}
+    .audience-card{border:0;background:linear-gradient(135deg,rgba(217,168,62,.15),rgba(217,168,62,.035));border-radius:5px}
+    .audience-card li{border-bottom:0}
+    .cta-band{border:0}
+    .contact-note{border-left:0;background:rgba(217,168,62,.12);border-radius:4px}
+    .field input,.field textarea{border:0;border-bottom:1px solid rgba(255,255,255,.2);border-radius:0;background:rgba(255,255,255,.045)}
+    .field input:focus,.field textarea:focus{border-bottom-color:var(--gold)}
+    footer{border-top:0}
+    @media(max-width:950px){.pain:nth-child(3){border-right:0}.pain:nth-child(-n+3){border-bottom:0}}
+    @media(max-width:700px){.menu-toggle{border:0;background:rgba(217,168,62,.12)}.navlinks{border-bottom:0}.stat{border-bottom:0}.pain{border-bottom:0}.pain:nth-child(3){border-right:0}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#inicio" aria-label="Anderson Mendonça - início"><span class="monogram">AM</span><span><strong>ANDERSON MENDONÇA</strong><small>Pastor, mentor e terapeuta</small></span></a>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav class="navlinks" aria-label="Navegação principal">
+      <a href="#inicio">Início</a><a href="#sobre">Sobre</a><a href="#metodo">O método</a><a href="#para-quem">Para quem é</a><a href="#jornada">A jornada</a><a href="#contato">Contato</a>
+      <a class="nav-cta" href="#contato">Agendar conversa ↗</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="hero" id="inicio"><div class="wrap">
+    <div class="hero-inner"><div class="eyebrow">Ciência · Fé · Desenvolvimento humano</div>
+      <h1><span class="white">Além</span><span>das dores</span></h1>
+      <div class="hero-sub">Da dor à transformação.</div>
+      <p>Um caminho que integra princípios da neurociência, Programação Neurolinguística (PNL), desenvolvimento humano e fundamentos cristãos para ajudar você a compreender sua história, restaurar sua identidade e construir um novo capítulo.</p>
+      <div class="hero-actions"><a class="btn" href="#contato">Quero começar minha transformação <span>→</span></a><a class="btn btn-outline" href="#metodo">▷ Conhecer o método</a></div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><span class="symbol">♛</span><strong>+14 anos</strong><small>de ministério</small></div>
+      <div class="stat"><span class="symbol">♧</span><strong>Vidas impactadas</strong><small>por uma jornada de cuidado</small></div>
+      <div class="stat"><span class="symbol">◎</span><strong>Ciência</strong><small>que ajuda a compreender</small></div>
+      <div class="stat"><span class="symbol">♡</span><strong>Fé e amor</strong><small>que sustentam a caminhada</small></div>
+    </div>
+  </div></section>
+  <section class="section" id="fundamentos"><div class="wrap">
+    <div class="section-head"><div class="eyebrow">Uma abordagem integrada</div><h2>Transformação com <span class="gold">sentido e propósito</span></h2><p>O Método Além das Dores reúne diferentes perspectivas para apoiar uma jornada de autoconhecimento, fortalecimento e mudança.</p><div class="rule"></div></div>
+    <div class="pillars">
+      <article class="pillar"><div class="icon">♧</div><h3>Neurociência</h3><p>Entenda como o cérebro registra experiências e como é possível desenvolver novos caminhos.</p></article>
+      <article class="pillar"><div class="icon">⌘</div><h3>PNL</h3><p>Trabalhe crenças limitantes e explore novas possibilidades por meio de estratégias práticas.</p></article>
+      <article class="pillar"><div class="icon">✝</div><h3>Fé que fortalece</h3><p>Princípios cristãos voltados à identidade, esperança, perdão e propósito.</p></article>
+      <article class="pillar"><div class="icon">♧</div><h3>Libertação</h3><p>Um convite para reconhecer correntes emocionais e buscar uma vida com mais liberdade.</p></article>
+    </div>
+  </div></section>
+  <section class="section" style="padding-top:20px" id="para-quem"><div class="wrap">
+    <div class="section-head"><div class="eyebrow">Você não está sozinho</div><h2>Há dores que merecem ser <span class="gold">acolhidas</span></h2><p>Um espaço de escuta e reflexão para quem deseja compreender o que viveu e encontrar novas formas de seguir.</p></div>
+    <div class="pain-grid">
+      <div class="pain"><div class="icon">♡</div><h3>Dores que ninguém vê</h3></div><div class="pain"><div class="icon">⌁</div><h3>Feridas emocionais</h3></div><div class="pain"><div class="icon">☼</div><h3>Ansiedade e medos</h3></div><div class="pain"><div class="icon">♧</div><h3>Relacionamentos desgastados</h3></div><div class="pain"><div class="icon">◎</div><h3>Preocupações financeiras</h3></div><div class="pain"><div class="icon">?</div><h3>Falta de propósito</h3></div>
+    </div>
+  </div></section>
+  <section class="section" id="sobre"><div class="wrap about-grid">
+    <div class="portrait"><img src="assets/anderson-referencia.jpg" alt="Retrato de referência de Anderson Mendonça"><div class="portrait-label"><strong>Anderson Mendonça</strong><span>Pastor · Mentor · Terapeuta</span></div></div>
+    <div class="about-copy"><div class="eyebrow">Prazer, eu sou</div><h2>Anderson <span class="gold">Mendonça</span></h2><div class="roles"><span>✝ Pastor</span><span>◎ Terapeuta</span><span>♧ Mentor</span></div><p><strong>Criador do Método Além das Dores.</strong></p><p>Há mais de uma década, dedico minha vida a ajudar pessoas que carregam traumas, culpas, rejeições, ansiedade, medos e feridas emocionais.</p><p>Ao longo dessa caminhada, compreendi que muitas pessoas não precisam apenas de conselhos: precisam ser <strong>compreendidas</strong>.</p><p>Foi dessa convicção que nasceu o Método Além das Dores, uma metodologia que integra princípios da neurociência, Programação Neurolinguística (PNL), cura interior e fundamentos cristãos para conduzir pessoas da dor à transformação.</p><p>Meu propósito é ajudar você a compreender sua história, restaurar sua identidade e escrever um novo capítulo da sua vida.</p><a class="btn" href="#contato">Vamos conversar? <span>→</span></a></div>
+  </div></section>
+  <section class="section method" id="metodo"><div class="wrap">
+    <div class="section-head"><div class="eyebrow">Método Além das Dores</div><h2>A jornada da <span class="gold">transformação</span></h2><p>Um caminho estruturado, com espaço para acolher sua história, compreender padrões e construir novas possibilidades.</p><div class="rule"></div></div>
+    <div class="steps" id="jornada">
+      <article class="step"><div class="step-number">01</div><h3>Acolhimento</h3><p>Você será ouvido com empatia e respeito. Criamos um espaço seguro para que possa se abrir sem julgamentos.</p></article>
+      <article class="step"><div class="step-number">02</div><h3>Diagnóstico</h3><p>Entendemos sua história e identificamos bloqueios, padrões e crenças que podem manter você preso a ciclos de sofrimento.</p></article>
+      <article class="step"><div class="step-number">03</div><h3>Descoberta da raiz</h3><p>Investigamos as origens das dificuldades para ampliar a compreensão sobre como e por que certas dores se formaram.</p></article>
+      <article class="step"><div class="step-number">04</div><h3>Ressignificação</h3><p>Trabalhamos novas perspectivas para transformar crenças limitantes e construir formas mais saudáveis de pensar, sentir e agir.</p></article>
+      <article class="step"><div class="step-number">05</div><h3>Plano de ação</h3><p>Definimos passos práticos e personalizados para apoiar mudanças reais, consistentes e alinhadas à sua vida.</p></article>
+      <article class="step"><div class="step-number">06</div><h3>Transformação</h3><p>Você fortalece sua autonomia para tomar decisões com mais clareza, propósito e conexão com a pessoa que deseja ser.</p></article>
+    </div>
+    <div class="quote">“Da escuta ao recomeço, cada etapa foi criada para te levar à <span>liberdade</span> que você merece.”</div>
+  </div></section>
+  <section class="section"><div class="wrap">
+    <div class="section-head"><div class="eyebrow">Um passo de cada vez</div><h2>O que você encontra nessa <span class="gold">caminhada</span></h2></div>
+    <div class="audience"><article class="audience-card"><h3>Um espaço para você</h3><ul><li>Ser ouvido com atenção, empatia e acolhimento.</li><li>Olhar para sua história sem se resumir ao que aconteceu.</li><li>Reconhecer padrões emocionais e crenças que deseja transformar.</li><li>Desenvolver estratégias práticas para o cotidiano.</li></ul></article><article class="audience-card"><h3>Uma jornada construída com propósito</h3><ul><li>Reflexão e autoconhecimento, respeitando seu ritmo.</li><li>Integração de ferramentas de desenvolvimento humano e princípios de fé.</li><li>Fortalecimento da identidade, esperança e clareza de objetivos.</li><li>Compromisso com uma caminhada de respeito, sigilo e cuidado.</li></ul></article></div>
+  </div></section>
+  <section class="cta-band"><div class="wrap"><div class="eyebrow">Você não precisa caminhar sozinho</div><h2>Sua transformação pode começar com <span class="gold">uma conversa</span>.</h2><p>Conheça o método, compartilhe suas dúvidas e descubra se essa jornada faz sentido para o momento que você está vivendo.</p><a class="btn" href="#contato">Quero agendar minha conversa <span>→</span></a></div></section>
+  <section class="section" id="contato"><div class="wrap contact-grid"><div class="contact-copy"><div class="eyebrow">Vamos conversar</div><h2>Pronto para iniciar sua <span class="gold">jornada?</span></h2><p>Sua transformação começa com uma decisão. Entre em contato para saber mais sobre o Método Além das Dores e as possibilidades de atendimento.</p><div class="contact-note">♙ <strong>Sigilo, respeito e acolhimento.</strong><br>Este formulário abre seu aplicativo de e-mail para você revisar e enviar a mensagem. Os dados não são enviados automaticamente por este site.</div></div>
+    <form class="contact-form" id="contactForm">
+      <div class="field"><label for="nome">Seu nome</label><input id="nome" name="nome" placeholder="Como podemos chamar você?" required></div>
+      <div class="field"><label for="email">Seu e-mail</label><input id="email" name="email" type="email" placeholder="voce@exemplo.com" required></div>
+      <div class="field"><label for="assunto">O que você gostaria de saber?</label><input id="assunto" name="assunto" placeholder="Agendamento, método, dúvidas..."></div>
+      <div class="field"><label for="mensagem">Sua mensagem</label><textarea id="mensagem" name="mensagem" placeholder="Escreva aqui sua mensagem..." required></textarea></div>
+      <button class="btn" type="submit">Preparar mensagem ↗</button><p class="form-message" id="formMessage">O endereço de e-mail oficial ainda precisa ser configurado no código.</p>
+    </form>
+  </div></section>
+</main>
+<footer><div class="wrap footer-inner"><a class="brand" href="#inicio"><span class="monogram">AM</span><span><strong>ANDERSON MENDONÇA</strong><small>Pastor, mentor e terapeuta</small></span></a><div class="footer-links"><a href="#sobre">Sobre</a><a href="#metodo">O método</a><a href="#para-quem">Para quem é</a><a href="#contato">Contato</a></div><span>© <span id="year"></span> Método Além das Dores</span></div></footer>
+<script>
+  const toggle=document.querySelector('.menu-toggle');
+  const nav=document.querySelector('.navlinks');
+  toggle.addEventListener('click',()=>{const opened=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(opened));toggle.textContent=opened?'×':'☰'});
+  nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.textContent='☰'}));
+  document.getElementById('year').textContent=new Date().getFullYear();
+  document.getElementById('contactForm').addEventListener('submit',e=>{e.preventDefault();const name=document.getElementById('nome').value.trim();const email=document.getElementById('email').value.trim();const subject=document.getElementById('assunto').value.trim()||'Contato sobre o Método Além das Dores';const message=document.getElementById('mensagem').value.trim();const destination='SEU-EMAIL-AQUI';if(destination==='SEU-EMAIL-AQUI'){document.getElementById('formMessage').textContent='Para ativar o envio, substitua “SEU-EMAIL-AQUI” pelo e-mail oficial de contato no final do arquivo index.html.';return;}const body=`Nome: ${name}\nE-mail: ${email}\n\n${message}`;window.location.href=`mailto:${destination}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;});
+</script>
+</body>
+</html>
