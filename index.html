@@ -62,9 +62,57 @@
     footer{border-top:0}
     @media(max-width:950px){.pain:nth-child(3){border-right:0}.pain:nth-child(-n+3){border-bottom:0}}
     @media(max-width:700px){.menu-toggle{border:0;background:rgba(217,168,62,.12)}.navlinks{border-bottom:0}.stat{border-bottom:0}.pain{border-bottom:0}.pain:nth-child(3){border-right:0}}
+    #fundamentos,#sobre,#contato{background-color:#0e0d0a}
+    .testimonials{background:linear-gradient(180deg,#0e0d0a,#090806)}
+    .testimonial-toolbar{display:flex;justify-content:flex-end;gap:10px;margin:-20px 0 22px}
+    .testimonial-arrow{width:44px;height:44px;display:grid;place-items:center;border:0;border-radius:50%;background:rgba(217,168,62,.14);color:var(--gold2);font-size:1.5rem;cursor:pointer;transition:background .2s,transform .2s}
+    .testimonial-arrow:hover:not(:disabled){background:rgba(217,168,62,.28);transform:translateY(-2px)}
+    .testimonial-arrow:focus-visible{outline:2px solid var(--gold2);outline-offset:3px}
+    .testimonial-arrow:disabled{opacity:.38;cursor:not-allowed}
+    .testimonial-viewport{overflow-x:auto;scrollbar-width:none;scroll-snap-type:x mandatory;overscroll-behavior-inline:contain}
+    .testimonial-viewport::-webkit-scrollbar{display:none}
+    .testimonial-track{display:flex;gap:16px}
+    .testimonial-card{flex:0 0 calc((100% - 32px)/3);min-width:0;padding:27px 24px;background:linear-gradient(145deg,rgba(217,168,62,.12),rgba(217,168,62,.035) 60%,rgba(255,255,255,.015));border-radius:5px;scroll-snap-align:start}
+    .testimonial-card blockquote{margin:0 0 24px;color:#e5ddcf;font-size:.9rem}
+    .testimonial-card blockquote:before{content:"“";display:block;color:var(--gold2);font:500 2.8rem/.8 'Barlow Condensed',sans-serif}
+    .testimonial-person{display:flex;align-items:center;gap:13px}
+    .testimonial-avatar{position:relative;display:grid;place-items:center;flex:0 0 58px;height:58px;overflow:hidden;border-radius:50%;background:linear-gradient(145deg,#8b6428,#2c2111);color:#fff3d4}
+    .testimonial-avatar:before{content:"";position:absolute;top:10px;width:18px;height:18px;border-radius:50%;background:rgba(255,243,212,.78)}
+    .testimonial-avatar:after{content:"";position:absolute;bottom:-4px;width:36px;height:27px;border-radius:50% 50% 0 0;background:rgba(255,243,212,.78)}
+    .testimonial-avatar span{position:absolute;z-index:1;bottom:0;width:100%;padding:2px 0;background:rgba(5,5,4,.76);font-size:.4rem;line-height:1.05;text-align:center;text-transform:uppercase;letter-spacing:.04em;color:#fff3d4}
+    .testimonial-card:nth-child(2) .testimonial-avatar{background:linear-gradient(145deg,#546c5c,#19251d)}
+    .testimonial-card:nth-child(3) .testimonial-avatar{background:linear-gradient(145deg,#8a5947,#39231b)}
+    .testimonial-card:nth-child(4) .testimonial-avatar{background:linear-gradient(145deg,#596c82,#202c3b)}
+    .testimonial-card:nth-child(5) .testimonial-avatar{background:linear-gradient(145deg,#795d78,#322334)}
+    .testimonial-card:nth-child(6) .testimonial-avatar{background:linear-gradient(145deg,#7a7148,#302b18)}
+    .testimonial-person strong{display:block;font:500 1.08rem 'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.04em}
+    .testimonial-person small{display:block;color:var(--gold2);font-size:.64rem;text-transform:uppercase;letter-spacing:.08em}
+    .testimonial-notice{margin:18px 0 0;color:var(--muted);font-size:.75rem;text-align:center}
+    @media(max-width:950px){.testimonial-card{flex-basis:calc((100% - 16px)/2)}}
+    @media(max-width:700px){.testimonial-card{flex-basis:100%}.testimonial-toolbar{margin-top:-10px}}
+    #para-quem,.audience-section{background-color:#12100c}
+    #fundamentos,#para-quem,#sobre,.audience-section,#contato{border-top:1px solid rgba(255,255,255,.035)}
+    .method{background:transparent;isolation:isolate}
+    .method:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(8,7,5,.84),rgba(8,7,5,.78) 50%,rgba(5,5,4,.88)),url('assets/anderson-referencia.jpg') center 42%/cover fixed no-repeat}
+    @media(max-width:700px){.method:before{background-attachment:scroll}}
+    .video-intro{position:fixed;inset:50% auto auto 50%;transform:translate(-50%,-50%);z-index:1000;width:min(1280px,calc(100% - 24px));height:auto;max-width:none;max-height:calc(100dvh - 24px);margin:0;padding:clamp(8px,1.5vw,16px);overflow:visible;border:1px solid rgba(217,168,62,.3);background:#080706;color:var(--text);box-shadow:0 28px 100px rgba(0,0,0,.8)}
+    .video-intro[open]{display:block}
+    .video-intro::backdrop{background:rgba(0,0,0,.78);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+    .video-intro-close{position:absolute;top:12px;right:12px;width:42px;height:42px;display:grid;place-items:center;border:0;border-radius:50%;background:rgba(217,168,62,.16);color:var(--gold2);font-size:1.75rem;line-height:1;cursor:pointer}
+    .video-intro-close:hover{background:rgba(217,168,62,.3)}
+    .video-intro-close:focus-visible{outline:2px solid var(--gold2);outline-offset:3px}
+    .video-intro-frame{display:block;width:100%;height:auto;max-height:calc(100dvh - 48px);aspect-ratio:16/9;border:0;background:#000;object-fit:contain}
+    @media(max-width:600px){.video-intro{width:calc(100% - 16px);padding:8px}.video-intro-frame{max-height:calc(100dvh - 32px)}.video-intro-close{top:4px;right:4px;width:36px;height:36px}}
   </style>
 </head>
 <body>
+<dialog class="video-intro" id="videoIntro" aria-label="Vídeo de apresentação">
+  <button class="video-intro-close" id="closeVideoIntro" type="button" aria-label="Fechar vídeo" autofocus>×</button>
+  <video class="video-intro-frame" id="introVideoFrame" controls playsinline preload="metadata" aria-label="Vídeo de apresentação">
+    <source src="assets/videohome.mp4" type="video/mp4">
+    Seu navegador não conseguiu carregar o vídeo. Verifique se o arquivo assets/videohome.mp4 está disponível.
+  </video>
+</dialog>
 <header>
   <div class="wrap nav">
     <a class="brand" href="#inicio" aria-label="Anderson Mendonça - início"><span class="monogram">AM</span><span><strong>ANDERSON MENDONÇA</strong><small>Pastor, mentor e terapeuta</small></span></a>
@@ -121,11 +169,29 @@
     </div>
     <div class="quote">“Da escuta ao recomeço, cada etapa foi criada para te levar à <span>liberdade</span> que você merece.”</div>
   </div></section>
-  <section class="section"><div class="wrap">
+  <section class="section audience-section"><div class="wrap">
     <div class="section-head"><div class="eyebrow">Um passo de cada vez</div><h2>O que você encontra nessa <span class="gold">caminhada</span></h2></div>
     <div class="audience"><article class="audience-card"><h3>Um espaço para você</h3><ul><li>Ser ouvido com atenção, empatia e acolhimento.</li><li>Olhar para sua história sem se resumir ao que aconteceu.</li><li>Reconhecer padrões emocionais e crenças que deseja transformar.</li><li>Desenvolver estratégias práticas para o cotidiano.</li></ul></article><article class="audience-card"><h3>Uma jornada construída com propósito</h3><ul><li>Reflexão e autoconhecimento, respeitando seu ritmo.</li><li>Integração de ferramentas de desenvolvimento humano e princípios de fé.</li><li>Fortalecimento da identidade, esperança e clareza de objetivos.</li><li>Compromisso com uma caminhada de respeito, sigilo e cuidado.</li></ul></article></div>
   </div></section>
   <section class="cta-band"><div class="wrap"><div class="eyebrow">Você não precisa caminhar sozinho</div><h2>Sua transformação pode começar com <span class="gold">uma conversa</span>.</h2><p>Conheça o método, compartilhe suas dúvidas e descubra se essa jornada faz sentido para o momento que você está vivendo.</p><a class="btn" href="#contato">Quero agendar minha conversa <span>→</span></a></div></section>
+  <section class="section testimonials" aria-labelledby="testimonials-title"><div class="wrap">
+    <div class="section-head"><div class="eyebrow">Histórias de transformação</div><h2 id="testimonials-title">Quem participou <span class="gold">tem algo a compartilhar</span></h2><p>Conheça relatos de pessoas que fizeram parte dessa jornada.</p></div>
+    <div class="testimonial-toolbar" aria-label="Controles dos depoimentos">
+      <button class="testimonial-arrow" type="button" data-testimonial-direction="-1" aria-label="Ver depoimentos anteriores" disabled>‹</button>
+      <button class="testimonial-arrow" type="button" data-testimonial-direction="1" aria-label="Ver próximos depoimentos">›</button>
+    </div>
+    <div class="testimonial-viewport" id="testimonialViewport" aria-label="Carrossel de depoimentos">
+      <div class="testimonial-track">
+        <article class="testimonial-card"><blockquote>Este é um espaço reservado para um relato verdadeiro sobre a experiência e os aprendizados da jornada.</blockquote><div class="testimonial-person"><div class="testimonial-avatar" role="img" aria-label="Espaço reservado para foto"><span>Foto</span></div><div><strong>Participante 01</strong><small>Depoimento demonstrativo</small></div></div></article>
+        <article class="testimonial-card"><blockquote>Substitua este texto pelo depoimento autorizado de alguém que participou do método.</blockquote><div class="testimonial-person"><div class="testimonial-avatar" role="img" aria-label="Espaço reservado para foto"><span>Foto</span></div><div><strong>Participante 02</strong><small>Depoimento demonstrativo</small></div></div></article>
+        <article class="testimonial-card"><blockquote>Conte aqui, com as palavras da própria pessoa, o que ela gostaria de compartilhar.</blockquote><div class="testimonial-person"><div class="testimonial-avatar" role="img" aria-label="Espaço reservado para foto"><span>Foto</span></div><div><strong>Participante 03</strong><small>Depoimento demonstrativo</small></div></div></article>
+        <article class="testimonial-card"><blockquote>Adicione um relato real e aprovado pela pessoa participante antes de publicar o site.</blockquote><div class="testimonial-person"><div class="testimonial-avatar" role="img" aria-label="Espaço reservado para foto"><span>Foto</span></div><div><strong>Participante 04</strong><small>Depoimento demonstrativo</small></div></div></article>
+        <article class="testimonial-card"><blockquote>Use este espaço para registrar uma experiência verdadeira, respeitando a privacidade de quem participou.</blockquote><div class="testimonial-person"><div class="testimonial-avatar" role="img" aria-label="Espaço reservado para foto"><span>Foto</span></div><div><strong>Participante 05</strong><small>Depoimento demonstrativo</small></div></div></article>
+        <article class="testimonial-card"><blockquote>Troque este conteúdo por um depoimento autêntico e autorizado, junto com a foto correspondente.</blockquote><div class="testimonial-person"><div class="testimonial-avatar" role="img" aria-label="Espaço reservado para foto"><span>Foto</span></div><div><strong>Participante 06</strong><small>Depoimento demonstrativo</small></div></div></article>
+      </div>
+    </div>
+    <p class="testimonial-notice">Conteúdo demonstrativo: substitua os textos, nomes e espaços de foto por depoimentos reais autorizados antes de publicar.</p>
+  </div></section>
   <section class="section" id="contato"><div class="wrap contact-grid"><div class="contact-copy"><div class="eyebrow">Vamos conversar</div><h2>Pronto para iniciar sua <span class="gold">jornada?</span></h2><p>Sua transformação começa com uma decisão. Entre em contato para saber mais sobre o Método Além das Dores e as possibilidades de atendimento.</p><div class="contact-note">♙ <strong>Sigilo, respeito e acolhimento.</strong><br>Este formulário abre seu aplicativo de e-mail para você revisar e enviar a mensagem. Os dados não são enviados automaticamente por este site.</div></div>
     <form class="contact-form" id="contactForm">
       <div class="field"><label for="nome">Seu nome</label><input id="nome" name="nome" placeholder="Como podemos chamar você?" required></div>
@@ -138,11 +204,27 @@
 </main>
 <footer><div class="wrap footer-inner"><a class="brand" href="#inicio"><span class="monogram">AM</span><span><strong>ANDERSON MENDONÇA</strong><small>Pastor, mentor e terapeuta</small></span></a><div class="footer-links"><a href="#sobre">Sobre</a><a href="#metodo">O método</a><a href="#para-quem">Para quem é</a><a href="#contato">Contato</a></div><span>© <span id="year"></span> Método Além das Dores</span></div></footer>
 <script>
+  const videoIntro=document.getElementById('videoIntro');
+  const introVideoFrame=document.getElementById('introVideoFrame');
+  introVideoFrame.muted=false;
+  introVideoFrame.volume=1;
+  introVideoFrame.addEventListener('ended',()=>{if(videoIntro.open)videoIntro.close();});
+  videoIntro.showModal();
+  document.addEventListener('keydown',event=>{if(event.key==='Escape'&&videoIntro.open){event.preventDefault();videoIntro.close();}},true);
+  document.getElementById('closeVideoIntro').addEventListener('click',()=>videoIntro.close());
+  videoIntro.addEventListener('close',()=>{introVideoFrame.pause();introVideoFrame.currentTime=0;});
   const toggle=document.querySelector('.menu-toggle');
   const nav=document.querySelector('.navlinks');
   toggle.addEventListener('click',()=>{const opened=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(opened));toggle.textContent=opened?'×':'☰'});
   nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.textContent='☰'}));
   document.getElementById('year').textContent=new Date().getFullYear();
+  const testimonialViewport=document.getElementById('testimonialViewport');
+  const testimonialButtons=document.querySelectorAll('[data-testimonial-direction]');
+  const updateTestimonialButtons=()=>{const maxScroll=testimonialViewport.scrollWidth-testimonialViewport.clientWidth;testimonialButtons.forEach(button=>{const direction=Number(button.dataset.testimonialDirection);button.disabled=direction<0?testimonialViewport.scrollLeft<=1:testimonialViewport.scrollLeft>=maxScroll-1;});};
+  testimonialButtons.forEach(button=>button.addEventListener('click',()=>{const card=testimonialViewport.querySelector('.testimonial-card');const gap=parseFloat(getComputedStyle(testimonialViewport.querySelector('.testimonial-track')).gap)||0;testimonialViewport.scrollBy({left:(card.getBoundingClientRect().width+gap)*Number(button.dataset.testimonialDirection),behavior:'smooth'});}));
+  testimonialViewport.addEventListener('scroll',updateTestimonialButtons,{passive:true});
+  window.addEventListener('resize',updateTestimonialButtons);
+  updateTestimonialButtons();
   document.getElementById('contactForm').addEventListener('submit',e=>{e.preventDefault();const name=document.getElementById('nome').value.trim();const email=document.getElementById('email').value.trim();const subject=document.getElementById('assunto').value.trim()||'Contato sobre o Método Além das Dores';const message=document.getElementById('mensagem').value.trim();const destination='SEU-EMAIL-AQUI';if(destination==='SEU-EMAIL-AQUI'){document.getElementById('formMessage').textContent='Para ativar o envio, substitua “SEU-EMAIL-AQUI” pelo e-mail oficial de contato no final do arquivo index.html.';return;}const body=`Nome: ${name}\nE-mail: ${email}\n\n${message}`;window.location.href=`mailto:${destination}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;});
 </script>
 </body>
